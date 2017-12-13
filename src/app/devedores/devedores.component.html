@@ -1,0 +1,8 @@
+<h2>Meus Devedores</h2>
+<ul class="devedores">
+  <li *ngFor="let devedor of devedores">
+    <a routerLink="/detail/{{devedor.id}}">
+      <span class="badge">{{devedor.id}}</span> {{devedor.name}} {{devedor.valorDevido}}
+    </a>
+  </li>
+</ul>

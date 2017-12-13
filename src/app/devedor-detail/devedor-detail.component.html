@@ -1,0 +1,15 @@
+<div *ngIf="devedor">
+	<h2>Detalhes {{ devedor.name | uppercase }}</h2>
+	<div><span>id: </span>{{devedor.id}}</div>
+	<div>
+	  <label>name:
+		<input [(ngModel)]="devedor.name" placeholder="name">
+	  </label>
+	</div>
+	<div>
+	  <label>valorDevido:
+		<input [(ngModel)]="devedor.valorDevido" placeholder="valorDevido">
+	  </label>
+	</div>
+	<button (click)="goBack()">go back</button>
+</div>

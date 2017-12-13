@@ -1,0 +1,9 @@
+<h3>Alguns Devedores</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let devedor of devedores" class="col-1-4"
+    routerLink="/detail/{{devedor.id}}">
+    <div class="module devedor">
+      <h4>{{devedor.name}}</h4>
+    </div>
+  </a>
+</div>
